@@ -1,0 +1,11 @@
+services:
+  etruck-monitor:
+    build: .
+    container_name: etruck-powertrain-monitor
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ETRUCK_DB_PATH=/app/data/telemetry.db
+    restart: unless-stopped
