@@ -1,4 +1,5 @@
 # 🚛 e-Truck Powertrain ECU Simulator & Predictive Health Monitor
+![Powertrain Monitor CI](https://github.com/yakari-0/etruck-powertrain-monitor/actions/workflows/ci.yml/badge.svg)
 
 An end-to-end **IoT & ePowertrain telemetry application** built for heavy-duty commercial electric vehicles. It simulates **BMS** and **e-Motor/Inverter ECUs** communicating via raw 8-byte **SAE J1939 CAN frames** over a virtual CAN bus, decodes signals in real time, runs **physics-informed ML anomaly detection (`OneClassSVM`)** + **ECU Diagnostic Trouble Codes (DTCs)**, and exposes fleet-uptime KPIs on a live dashboard.
 
